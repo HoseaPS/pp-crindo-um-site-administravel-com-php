@@ -1,1 +1,3 @@
-<h1>Shabba</h1>
+<?php 
+
+echo 'Ranks';
