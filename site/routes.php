@@ -1,3 +1,9 @@
-<?php 
+<?php
 
-echo 'Ranks';
+if (resolve('/')) {
+    echo 'Home';
+} elseif (resolve('/teste')) {
+    echo 'Página teste';
+} else {
+    echo 'Página não encontrada';
+}
