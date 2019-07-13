@@ -1,7 +1,7 @@
 <?php
 
 if (resolve('/')) {
-    echo 'Home';
+    render('site/home', 'site');
 } elseif (resolve('/teste')) {
     echo 'Página teste';
 } else {
