@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
 
     <title>Painel Administrativo</title>
   </head>
-  <body>
+  <body class="d-flex flex-column">
     <div id="header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a href="" class="navbar-brand">Admin</a>
@@ -20,7 +21,7 @@
     <div id="main">
         <div class="row">
             <div class="col">
-                <ul class="p-2 nav flex-column nav-pills bg-secondary text-white">
+                <ul id="main-menu" class="p-2 nav flex-column nav-pills bg-secondary text-white">
                     <li class="nav-item">
                         <span href="" class="nav-link text-white-50"><small>MENU</small></span>
                     </li>
@@ -32,7 +33,7 @@
                     </li>      
                 </ul>
             </div>
-            <div class="col-10"> 
+            <div id="content" class="col-10"> 
                 <?php include $content; ?>
             </div>
         </div>
